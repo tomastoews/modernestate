@@ -1,0 +1,15 @@
+.input {
+    @include transform;
+    background: #fff;
+    color: black;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px $color_lightgray solid;
+    border-radius: $border_radius;
+    outline: none;
+}
+
+// .input:focus, 
+// .input:active {
+//     border-color: $color_green;
+// }

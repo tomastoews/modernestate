@@ -1,0 +1,27 @@
+#trends {
+    padding: $section_padding;
+
+    .content {
+        padding-top: 4em;
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .box {
+            p {
+                font-size: 2em;
+                margin-bottom: 0.7em;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    #trends {
+        .content {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

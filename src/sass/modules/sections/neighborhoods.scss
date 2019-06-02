@@ -1,0 +1,83 @@
+#neighborhoods {
+    padding: $section_padding;
+
+    .content {
+        padding-top: 4em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
+        grid-template-areas: 'berlin muenchen hamburg'
+                             'hannover frankfurt frankfurt'
+                             'dresden dresden koeln';
+
+        .box {
+            height: 250px;
+            position: relative;
+            background-position: center !important;
+            background-size: cover !important;
+
+            .label {
+                z-index: 2;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 12em;
+                height: 4em;
+                box-sizing: border-box;
+                padding-left: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p {
+                    color: #000;
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .berlin { grid-area: berlin; }
+        .muenchen { grid-area: muenchen; }
+        .hamburg { grid-area: hamburg; }
+        .hannover { grid-area: hannover; }
+        .frankfurt { grid-area: frankfurt; }
+        .dresden { grid-area: dresden; }
+        .koeln { grid-area: koeln; }
+
+        .berlin { background: url('../images/berlin.jpg') no-repeat; }
+        .muenchen { background: url('../images/muenchen.jpg') no-repeat; }
+        .hamburg { background: url('../images/hamburg.jpg') no-repeat; }
+        .hannover { background: url('../images/hannover.jpg') no-repeat; }
+        .frankfurt { background: url('../images/frankfurt.jpg') no-repeat; }
+        .dresden { background: url('../images/dresden.jpg') no-repeat; }
+        .koeln { background: url('../images/koeln.jpg') no-repeat; }
+    }
+}
+
+@media (max-width: 1030px) {
+    #neighborhoods {
+        .content {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 'berlin berlin'
+                                 'muenchen hamburg'
+                                 'hannover frankfurt'
+                                 'dresden koeln';
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #neighborhoods {
+        .content {
+            grid-template-columns: 1fr;
+            grid-template-areas: 'berlin'
+                                 'muenchen'
+                                 'hamburg'
+                                 'hannover'
+                                 'frankfurt'
+                                 'dresden'
+                                 'koeln';
+        }
+    }
+}

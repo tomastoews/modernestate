@@ -1,0 +1,21 @@
+{
+  "name": "modernestate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Tomas Töws",
+  "license": "No License",
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "parcel-bundler": "^1.12.0",
+    "sass": "^1.17.2"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

@@ -1,0 +1,18 @@
+.button {
+    @include transform;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px $color_lightgray solid;
+    border-radius: $border_radius;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: $color_green;
+    color: #fff;
+    border-color: $color_green;
+}
