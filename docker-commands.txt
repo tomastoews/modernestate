@@ -1,0 +1,9 @@
+
+# Docker Commands:
+	https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
+
+# Build Container:
+	$ sudo docker build -t modernestate .
+
+# Run Container:
+	$ sudo docker container run -it -p 8082:80 modernestate
