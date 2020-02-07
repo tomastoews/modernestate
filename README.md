@@ -1,4 +1,4 @@
 # Modern Estate
 
 # Live Demo
-https://modernestate.netlify.com/
+https://www.projects.tomastoews.de/modernestate/
